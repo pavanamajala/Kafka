@@ -22,8 +22,10 @@ function KafkaSenderComponent() {
     return (
         <div>
             <h1>Send Cab Locations</h1>
-            <input type='text' onChange={(e) => { setMessages(e.target.value) }}></input>
-            <button type='submit' onClick={() => { handleOnClick() }}>SUBMIT</button>
+            <div className='form-container'>
+                <input type='text' className='custom-input' onChange={(e) => { setMessages(e.target.value) }}></input>
+                <button type='submit' className="custom-button" onClick={() => { handleOnClick() }}>SUBMIT</button>
+            </div>
         </div>
     );
 }

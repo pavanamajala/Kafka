@@ -15,7 +15,7 @@ import com.kafka.cab_book_driver.service.CabLocatrionService;
 
 @RestController
 @RequestMapping("/location")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class CabLocationController {
 
 	@Autowired
